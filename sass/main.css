@@ -14,6 +14,24 @@ address {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /* Mobile screen */
+  /* Tablet screen */
+  /* Desctop screen */
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .container-p {
@@ -275,6 +293,12 @@ textarea {
   background: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .feature__list {

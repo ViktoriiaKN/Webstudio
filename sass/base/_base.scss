@@ -14,6 +14,22 @@ address {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+/* Mobile screen */
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    /* Tablet screen */
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    /* Desctop screen */
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+
 }
 
 .container-p {
@@ -23,4 +39,5 @@ address {
     padding-right: 20px;
 
     text-align: center;
+
 }
