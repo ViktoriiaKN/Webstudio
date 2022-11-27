@@ -1,6 +1,6 @@
 .feature__title-secondary {
     font-weight: 700;
-
+    text-align: center;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
@@ -33,14 +33,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 120px;
+
     background-color: $section-background;
 }
 
 .feature__about {
-    @extend %section;
-    text-align: center;
+
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -59,4 +57,12 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.feature__item {
+    padding-bottom: 30px;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
 }
