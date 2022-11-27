@@ -1,7 +1,13 @@
+/* Utils */
 @import './utils/variables';
+@import './utils/placeholder';
+@import './utils/visualy-hidden';
+
+/* Base */
 @import './base/base';
 @import './base/reset';
-@import './utils/visualy-hidden';
+
+/* Components */
 @import './components/header';
 @import './components/navigation';
 @import './components/contacts';

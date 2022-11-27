@@ -1,3 +1,36 @@
+/* Utils */
+.feature {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Base */
 body {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
@@ -74,20 +107,7 @@ textarea {
   resize: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+/* Components */
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -291,14 +311,7 @@ textarea {
 
 .feature {
   background: #ffffff;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-@media screen and (min-width: 768px) {
-  .feature {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  outline: 1px solid tomato;
 }
 
 .feature__list {
