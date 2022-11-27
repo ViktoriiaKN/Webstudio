@@ -1,4 +1,21 @@
 /* Utils */
+.feature {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -293,7 +310,6 @@ textarea {
 }
 
 .feature {
-  /* @extend %section; */
   background: #ffffff;
   outline: 1px solid tomato;
 }
