@@ -10,7 +10,7 @@
 }
 
 .feature {
-    @extend %section;
+    /* @extend %section; */
     background: $project-background;
     outline: 1px solid tomato;
 }
