@@ -16,12 +16,18 @@
 }
 
 .feature__list {
-    display: flex;
-    gap: 30px;
+    outline: 1px solid teal;
+    @extend %section;
     
+@media screen and ($tablet) {
+    display: flex;
+
+}
+
 }
 
 .feature__container {
+    @extend %section;
     margin-bottom: 30px;
 
     display: flex;
@@ -33,6 +39,8 @@
 }
 
 .feature__about {
+    @extend %section;
+    text-align: center;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;

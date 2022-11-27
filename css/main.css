@@ -1,16 +1,16 @@
 /* Utils */
-.feature {
-  padding-top: 84px;
-  padding-bottom: 84px;
+.feature__about, .feature__container, .feature__list, .feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
-  .feature {
+  .feature__about, .feature__container, .feature__list, .feature {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .feature {
+  .feature__about, .feature__container, .feature__list, .feature {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -42,19 +42,13 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
+  max-width: 479, 98px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  margin-right: auto;
-  /* Mobile screen */
   /* Tablet screen */
   /* Desctop screen */
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -64,6 +58,10 @@ address {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -359,10 +357,14 @@ textarea {
 }
 
 .feature__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  outline: 1px solid teal;
+}
+@media screen and (768px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .feature__container {
@@ -382,6 +384,7 @@ textarea {
 }
 
 .feature__about {
+  text-align: center;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
