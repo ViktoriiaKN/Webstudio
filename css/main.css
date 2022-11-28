@@ -391,6 +391,12 @@ textarea {
     height: 120px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .feature__container {
+    width: 270px;
+    height: 120px;
+  }
+}
 
 .feature__about {
   font-size: 14px;
@@ -416,6 +422,18 @@ textarea {
 
 .feature__item {
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    width: 354px;
+    height: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: 270px;
+    height: 248px;
+  }
 }
 .feature__item:last-child {
   padding-bottom: 0;
