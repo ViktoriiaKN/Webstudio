@@ -9,22 +9,24 @@ address {
 }
 
 .container {
-    margin: 0 auto;
-        padding: 0 15px;
     
- // phone screen
-@media screen and (min-width: 480px){
-width: 480px;
+    padding: 0 15px;
+outline: 2px solid aqua;
+outline-offset: -2px;
+
+/* mobile screen */
+@media screen and (min-width: $mobile) {
+    width: $mobile;
 }
-    
+
 // tablet screen
-@media screen and (min-width: 768px) {
-    width: 768px;
+@media screen and (min-width:$tablet) {
+    width: $tablet;
 }
     
 // desktop screen
-@media screen and (min-width: 1200px) {
-    width: 1200px;
+@media screen and (min-width: $desktop) {
+    width: $desktop;
 }
 
 }
@@ -39,7 +41,3 @@ width: 480px;
 
 }
 
-.responsive_container {
-    max-width: 767px;
-
-}
