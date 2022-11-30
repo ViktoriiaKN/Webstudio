@@ -1535,9 +1535,7 @@ textarea {
 }
 
 .mobile-menu {
-  padding: 0;
   margin-bottom: 302px;
-  list-style: none;
 }
 
 .mobile-menu .link {
@@ -1549,8 +1547,8 @@ textarea {
 
 .link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 40px;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
   padding-top: 32px;
@@ -1566,5 +1564,79 @@ textarea {
 
 .link:hover,
 .link:focus {
+  color: #2196f3;
+}
+
+.menu-contacts {
+  margin-left: auto;
+  margin-bottom: 64px;
+  /*     position: absolute; */
+}
+
+.menu-contacts__mail {
+  /* display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center; */
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-contacts__mail:hover, .menu-contacts__mail:focus {
+  color: #2196f3;
+}
+
+.menu-contacts__tel {
+  /* display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center; */
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 32px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-contacts__tel:hover, .menu-contacts__tel:focus {
+  color: #2196f3;
+}
+
+.menu__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+}
+
+.menu__socials-list {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #757575;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__socials-list:hover, .menu__socials-list:focus {
   color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
