@@ -209,14 +209,18 @@
           <ul class="section-team-ul">
             <li class="team-li team-igor">
               <img
-                class="team-img"
                 srcset="
-                  images\mobile\team\1x\igor_450.jpg,
-                  images\mobile\team\2x\igor_900.jpg
+                  images\mobile\team\1x\igor_450.jpg  450w,
+                  images\mobile\team\2x\igor_900.jpg  900w,
+                  images/tablet/team/1x/igor_354.jpg  354w,
+                  images/tablet/team/2x/igor_708.jpg  708w,
+                  images/desktop/team/2x/igor_540.jpg 540w,
+                  images/Igor.jpg                     270w
                 "
-                src="./images/Igor.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450"
+                height="460"
                 alt="Ігор Дем'яненко"
-                width="270"
               />
               <div class="container-p">
                 <h3 class="team">Ігор Дем'яненко</h3>
@@ -250,7 +254,20 @@
               </div>
             </li>
             <li class="team-li team-another">
-              <img src="./images/Olga.jpg" alt="Ольга Рєпіна" width="270" />
+              <img
+                srcset="
+                  images/mobile/team/1x/olga_450-1.jpg  450w,
+                  images/mobile/team/2x/olga_900-1.jpg  900w,
+                  images/tablet/team/1x/olga_354-1.jpg  354w,
+                  images/tablet/team/2x/olga_708-1.jpg  708w,
+                  images/desktop/team/2x/olga_540-1.jpg 540w,
+                  images/Olga.jpg                       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450"
+                height="460"
+                alt="Ольга Рєпіна"
+              />
               <div class="container-p">
                 <h3 class="team">Ольга Рєпіна</h3>
                 <p class="about-team">Frontend Developer</p>
@@ -283,7 +300,20 @@
               </div>
             </li>
             <li class="team-li team-another">
-              <img src="./images/Mykola.jpg" alt="Микола Тарасов" width="270" />
+              <img
+                srcset="
+                  images/mobile/team/1x/mykola_450-2.jpg  450w,
+                  images/mobile/team/2x/mykola_900-2.jpg  900w,
+                  images/tablet/team/1x/mykola_354-2.jpg  354w,
+                  images/tablet/team/2x/mykola_708-2.jpg  708w,
+                  images/desktop/team/2x/mykola_540-2.jpg 540w,
+                  images/Mykola.jpg                       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450"
+                height="460"
+                alt="Микола Тарасов"
+              />
               <div class="container-p">
                 <h3 class="team">Микола Тарасов</h3>
                 <p class="about-team">Marketing</p>
@@ -317,9 +347,18 @@
             </li>
             <li class="team-li team-another">
               <img
-                src="./images/Mykhailo.jpg"
+                srcset="
+                  images/mobile/team/1x/mychailo_450-3.jpg  450w,
+                  images/mobile/team/2x/mychailo_900-3.jpg  900w,
+                  images/tablet/team/1x/mychailo_354-3.jpg  354w,
+                  images/tablet/team/2x/mychailo_708-3.jpg  708w,
+                  images/desktop/team/2x/mychailo_540-3.jpg 540w,
+                  images/Mykhailo.jpg                       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                width="450"
+                height="460"
                 alt="Михайло Єрмаков"
-                width="270"
               />
               <div class="container-p">
                 <h3 class="team">Михайло Єрмаков</h3>
@@ -406,7 +445,7 @@
 
     <!-- FOOTER -->
 
-    <!-- <footer class="section-footer">
+    <footer class="section-footer">
       <div class="container container-footer">
         <div class="footer-contacts">
           <a href="./index.html" class="logo-link-footer"
@@ -485,7 +524,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- MODAL -->
 

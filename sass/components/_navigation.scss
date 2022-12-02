@@ -42,4 +42,8 @@
     border-radius: 2px;
     margin-bottom: -1px;
     background-color: $active-color;
+
+    @media screen and (min-width:$tablet) {
+        margin-bottom: -10px;
+    }
 }

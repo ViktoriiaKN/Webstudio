@@ -23,6 +23,11 @@
     left: 1px;
 }
 
+@media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: calc(16 / 14);
+}
+
     &:hover,
     &:focus {
         color: $active-color;
@@ -53,6 +58,12 @@
             font-size: 12px;
             line-height: calc(14 / 12);
         }
+
+@media screen and (min-width:$desktop) {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+}
 
     &:hover,
     &:focus {
