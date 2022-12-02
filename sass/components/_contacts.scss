@@ -15,6 +15,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+@media screen and (max-width:$tablet) {
+    padding: 0;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    position: absolute;
+    left: 1px;
+}
 
     &:hover,
     &:focus {
@@ -25,7 +32,7 @@
 .contacts__mail {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
@@ -40,6 +47,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width:$tablet) {
+            padding: 0;
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: calc(14 / 12);
+        }
+
     &:hover,
     &:focus {
         color: $active-color;
@@ -49,7 +63,8 @@
 .contacts__item {
     display: none;
     @media screen and (min-width:$tablet) {
-        display: flex;
+        display: block;
+
     }
         @media screen and (min-width:$desktop) {
             display: flex;
@@ -63,8 +78,23 @@
 
 .contacts__mail-icon {
     fill: currentColor;
+    width: 14px;
+    height: 10px;
+
+@media screen and (min-width:$desktop) {
+    width: 16px;
+    height: 12px;
+}
+
 }
 
 .contacts__tel-icon {
     fill: currentColor;
+    width: 10px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop) {
+        width: 10px;
+        height: 16px;
+    }
 }
