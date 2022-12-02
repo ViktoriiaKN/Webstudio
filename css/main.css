@@ -596,8 +596,13 @@ textarea {
 }
 
 .section-main-second {
-  background: #ffffff;
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section-main-second {
+    background: #ffffff;
+    padding-bottom: 94px;
+  }
 }
 
 .section-team {

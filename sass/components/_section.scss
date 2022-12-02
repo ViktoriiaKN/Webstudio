@@ -8,8 +8,14 @@
 }
 
 .section-main-second {
-    background: $project-background;
-    padding-bottom: 94px;
+
+    display: none;
+
+    @media screen and (min-width:$desktop) {
+        background: $project-background;
+            padding-bottom: 94px;
+    }
+    
 }
 
 .section-team {
