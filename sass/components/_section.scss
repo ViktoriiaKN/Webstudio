@@ -1,10 +1,16 @@
 .section-title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: calc(42 / 36);
+    font-size: 28px;
+    line-height: calc(33 / 28);
     letter-spacing: 0.03em;
     color: $nav-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
 }
 
 .section-main-second {
@@ -12,6 +18,7 @@
     display: none;
 
     @media screen and (min-width:$desktop) {
+        display: flex;
         background: $project-background;
             padding-bottom: 94px;
     }
@@ -20,14 +27,29 @@
 
 .section-team {
     background: $section-background;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$desktop) {
+        padding-top: 94px;
+            padding-bottom: 94px;
+    }
 }
 
 .section-team-ul {
-    display: flex;
+    display: block;
 
-    gap: 30px;
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    @media screen and (min-width:$desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .section-footer {
