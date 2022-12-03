@@ -27,6 +27,7 @@
 @media screen and (min-width:$desktop) {
         font-size: 14px;
         line-height: calc(16 / 14);
+        position: unset;
 }
 
     &:hover,

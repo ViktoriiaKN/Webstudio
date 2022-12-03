@@ -280,6 +280,7 @@ textarea {
   .contacts__tel {
     font-size: 14px;
     line-height: 1.1428571429;
+    position: unset;
   }
 }
 .contacts__tel:hover, .contacts__tel:focus {
