@@ -1499,6 +1499,12 @@ textarea {
           justify-content: center;
   margin-top: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .email-footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1514,9 +1520,20 @@ textarea {
   border-color: rgba(255, 255, 255, 0.6);
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .email-footer {
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
 
 .footer-socials {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin-right: 93px;
+  }
 }
 
 .join-us {
@@ -1554,6 +1571,17 @@ textarea {
             justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: unset;
+  }
+}
 
 .footer-contacts {
   margin-bottom: 60px;
@@ -1561,6 +1589,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .footer-contacts {
     margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
