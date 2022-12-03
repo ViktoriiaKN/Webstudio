@@ -28,8 +28,6 @@ address {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid aqua;
-  outline-offset: -2px;
   /* mobile screen */
 }
 @media screen and (min-width: 480px) {
@@ -91,7 +89,6 @@ textarea {
 /* Components */
 .header {
   border-bottom: 1px solid #ececec;
-  outline: 1px solid tomato;
 }
 
 .header__container {
@@ -243,11 +240,6 @@ textarea {
   margin-bottom: -1px;
   background-color: #2196f3;
 }
-@media screen and (min-width: 768px) {
-  .navigation__link--current::after {
-    margin-bottom: -10px;
-  }
-}
 
 .contacts__tel {
   display: -webkit-box;
@@ -274,9 +266,10 @@ textarea {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .contacts__tel {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 12px;
     line-height: 1.1666666667;
     position: absolute;
@@ -520,7 +513,6 @@ textarea {
 
 .feature__list {
   display: block;
-  outline: 1px solid teal;
 }
 @media screen and (min-width: 768px) {
   .feature__list {
@@ -957,7 +949,7 @@ textarea {
 }
 
 .textarea {
-  width: 448px;
+  width: 100%;
   height: 120px;
   font-family: inherit;
   padding: 6px 16px;
@@ -967,6 +959,11 @@ textarea {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
+}
+@media screen and (min-width: 1200px) {
+  .textarea {
+    width: 448px;
+  }
 }
 .textarea:focus-visible {
   outline: 1px solid #2196f3;
@@ -1117,21 +1114,33 @@ textarea {
   gap: 9px;
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .conditions {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .conditions-text {
   color: #757575;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .conditions-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .btn-main-portfolio {
@@ -1308,7 +1317,6 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #ffffff;
-  outline: 2px solid tomato;
 }
 @media screen and (min-width: 768px) {
   .section-clients {

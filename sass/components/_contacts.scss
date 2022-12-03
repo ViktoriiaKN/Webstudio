@@ -15,8 +15,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (max-width:$tablet) {
-    padding: 0;
+@media screen and (min-width:$tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
     font-size: 12px;
     line-height: calc(14 / 12);
     position: absolute;

@@ -6,16 +6,26 @@
 
     color: $p-color;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+    }
 }
 
 .conditions-text {
     color: $p-color;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     user-select: none;
+
+    @media screen and (min-width:$desktop) {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+        }
 }
