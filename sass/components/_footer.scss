@@ -43,10 +43,21 @@ margin-bottom: 60px;
 .container-footer {
     display: block;
     text-align: center;
+
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .footer-contacts {
     margin-bottom: 60px;
+
+    @media screen and (min-width:$tablet) {
+        margin-right: 165px;
+    }
 }
 
 .logo-link-footer {
