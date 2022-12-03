@@ -1489,9 +1489,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
 }
 
@@ -1504,13 +1509,14 @@ textarea {
   height: 50px;
   padding-left: 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   background-color: #2f303a;
   border-color: rgba(255, 255, 255, 0.6);
   color: #ffffff;
 }
 
 .footer-socials {
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .join-us {
@@ -1531,13 +1537,11 @@ textarea {
 
 .container-footer {
   display: block;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  text-align: center;
 }
 
 .footer-contacts {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .logo-link-footer {

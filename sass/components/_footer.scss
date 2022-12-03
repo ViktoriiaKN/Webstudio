@@ -1,6 +1,8 @@
 .form-footer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -12,13 +14,14 @@
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
+    margin-bottom: 20px;
     background-color: $section-hero-color;
     border-color: $btn-color;
     color: $white-color;
 }
 
 .footer-socials {
-    margin-right: 93px;
+margin-bottom: 60px;
 }
 
 .join-us {
@@ -39,11 +42,11 @@
 
 .container-footer {
     display: block;
-    align-items: baseline;
+    text-align: center;
 }
 
 .footer-contacts {
-    margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 .logo-link-footer {
