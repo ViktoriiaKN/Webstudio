@@ -786,7 +786,7 @@ textarea {
 }
 
 .modal {
-  width: 450px;
+  width: 100vw;
   height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -800,6 +800,11 @@ textarea {
           transform: translate(-50%, -50%);
   -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1768,7 +1773,6 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   height: 100vh;
   padding: 40px;
   background-color: #ffffff;
@@ -1779,6 +1783,12 @@ textarea {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .menu-container {
+    width: 100vw;
+    right: 0;
+  }
 }
 
 .menu-container.is-open {
@@ -1879,6 +1889,8 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
 }
 
