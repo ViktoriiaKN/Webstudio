@@ -23,8 +23,13 @@
     border-color: $btn-color;
     color: $white-color;
 
+    @media screen and (min-width:$tablet) {
+        margin-right: 0;
+    }
+
     @media screen and (min-width:$desktop) {
         margin-bottom: 0;
+        margin-right: 12px;
         width: 358px;
     }
 }
@@ -34,6 +39,7 @@ margin-bottom: 60px;
 
 @media screen and (min-width:$desktop) {
     margin-right: 93px;
+    margin-bottom: 0;
 }
 }
 
@@ -61,22 +67,21 @@ margin-bottom: 60px;
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     @media screen and (min-width:$desktop) {
         display: flex;
         align-items: baseline;
         text-align: unset;
+        justify-content: unset;
     }
 }
 
 .footer-contacts {
     margin-bottom: 60px;
 
-    @media screen and (min-width:$tablet) {
-        margin-right: 165px;
-    }
+
 
     @media screen and (min-width:$desktop){
         margin-right: 70px;
