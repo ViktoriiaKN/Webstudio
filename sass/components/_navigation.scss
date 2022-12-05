@@ -31,6 +31,10 @@
     color: $active-color;
 }
 
+.current {
+    color: $active-color;
+}
+
 .navigation__link--current::after {
     content: "";
     position: absolute;
